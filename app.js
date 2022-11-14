@@ -10,6 +10,6 @@ app.use((req, res, next) => {
 	res.header('Access-Control-Allow-Origin', '*');
 	next();
 });
-app.use('/.netlify/functions/app', router);
+app.use('/', router);
 
 module.exports = app;
